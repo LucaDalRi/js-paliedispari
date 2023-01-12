@@ -4,22 +4,22 @@
 
 // -----------------------------------------------------------------------
 
-// function checkPalindroma(string) {
+function checkPalindroma(string) {
 
-//     // loop a meta della parola
-//     for (let i = 0; i < string.length / 2; i++) {
+    // loop a meta della parola
+    for (let i = 0; i < string.length / 2; i++) {
 
-//         // controllo se la prima e l`ultima lettera sono uguali
-//         if (string[i] !== string[string.length - 1 - i]) {
-//             return 'Non è una parola palindroma';
-//         }
-//     }
-//     return 'È una parola palindroma';
-// }
+        // controllo se la prima e l`ultima lettera sono uguali
+        if (string[i] !== string[string.length - 1 - i]) {
+            return 'Non è una parola palindroma';
+        }
+    }
+    return 'È una parola palindroma';
+}
 
-// const string = prompt('Inserisci la parola da controllare');
+const string = prompt('Inserisci la parola da controllare');
 
-// console.log(checkPalindroma(string));
+console.log(checkPalindroma(string));
 
 // -----------------------------------------------------------------------
 
@@ -46,62 +46,62 @@
 
 // -----------------------------------------------------------------------
 
-// let sceltaUtente = prompt('Vuoi avere il pari o dispari?');
+let sceltaUtente = prompt('Vuoi avere il pari o dispari?');
 
-// const numeroUtente = parseInt(prompt('Inserisci un numero ' + sceltaUtente + ' che sia compreso tra 1 e 5'));
+const numeroUtente = parseInt(prompt('Inserisci un numero ' + sceltaUtente + ' che sia compreso tra 1 e 5'));
 
-// sceltaUtente = sceltaUtente.toLowerCase;
+sceltaUtente = sceltaUtente.toLowerCase;
 
-// while (numeroUtente < 1 || numeroUtente > 5) {
+while (numeroUtente < 1 || numeroUtente > 5) {
 
-//     alert('C`è qualcosa che non va! Riprova');
+    alert('C`è qualcosa che non va! Riprova');
 
-//     break
-// }
+    break
+}
 
-// function generaNumeroRandom(min, max) {
+function generaNumeroRandom(min, max) {
     
-//     const numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+    const numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
 
-//     return numeroRandom;
+    return numeroRandom;
 
-// }
+}
 
-// const numeroCpu = generaNumeroRandom(1 , 5)
+const numeroCpu = generaNumeroRandom(1 , 5)
 
-// console.log(numeroCpu);
+console.log(numeroCpu);
 
-// const sommaNumeri = numeroUtente + numeroCpu;
+const sommaNumeri = numeroUtente + numeroCpu;
 
-// console.log(sommaNumeri);
+console.log(sommaNumeri);
 
-// function checkPariODispari (num1) {
+function checkPariODispari (num1) {
 
-//     if (num1 % 2 == 0) {
+    if (num1 % 2 == 0) {
         
-//         return 'pari';
+        return 'pari';
 
-//     }
-//     else { 
+    }
+    else { 
         
-//         return 'dispari';
+        return 'dispari';
 
-//     }
+    }
 
-// }
+}
 
-// const risultatoUtente = checkPariODispari(numeroUtente);
-// const risultatoCpu = checkPariODispari(numeroCpu);
+const risultatoUtente = checkPariODispari(numeroUtente);
+const risultatoCpu = checkPariODispari(numeroCpu);
 
-// if (risultatoUtente == sceltaUtente) {
+if (risultatoUtente == sceltaUtente) {
 
-//     alert('Hai Vinto! La somma del tuo numero e quello assegnato alla CPU da come risultato ' + sceltaUtente);
+    alert('Hai Vinto! La somma del tuo numero e quello assegnato alla CPU da come risultato ' + sceltaUtente);
 
-// }
-// else {
+}
+else {
 
-//     alert('Hai Perso! La somma del tuo numero e quello assegnato alla CPU non da come risultato la tua scelta!');
-// }
+    alert('Hai Perso! La somma del tuo numero e quello assegnato alla CPU non da come risultato la tua scelta!');
+}
 
 
 
